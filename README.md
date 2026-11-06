@@ -1,12 +1,18 @@
-# STEP Week 11 Assignment - Category C · Sorting Algorithms
+# STEP Week 11 — Category C · Data Structures & Sorting Algorithms
 
-This repository contains the complete Java solutions for the **STEP Sem-3 Week 11 Assignment Problems (Category C · Sorting Algorithms)** provided by CodInClub | Powered by BridgeLabz.
+This repository contains the complete Java and conceptual solutions for the **STEP Sem-3 Week 11 Category C** curriculum provided by CodInClub | Powered by BridgeLabz:
 
-All algorithms are implemented from scratch without using `Arrays.sort`. Each solution includes the exact required method signature, verification with sample inputs, and additional custom test cases.
+1. **Assignment Problems (Sorting Algorithms - Questions 1 to 5)**
+2. **Category C Problem Set**:
+   - **Part A — Coding Problems (Problems 1 to 10)**
+   - **Part B — Quiz (Questions 1 to 10)**
+   - **Part C — Concept Questions (Questions 1 to 5)**
 
 ---
 
-## Problems & Solutions
+## 1. Assignment Problems (Sorting Algorithms)
+
+Implemented from scratch without using `Arrays.sort`. Each solution includes sample and custom test verifications.
 
 | Question | Problem Name | Algorithm / Approach | File |
 | :--- | :--- | :--- | :--- |
@@ -14,88 +20,62 @@ All algorithms are implemented from scratch without using `Arrays.sort`. Each so
 | **Question 2** | The Prize Table | Selection Sort (descending order) with swap counter | [`Question2.java`](Question2.java) |
 | **Question 3** | The Library Book Shelf | Insertion Sort with state logging | [`Question3.java`](Question3.java) |
 | **Question 4** | Is the Queue in Order? | Single-pass linear scan to detect first break | [`Question4.java`](Question4.java) |
-| **Question 5** | The Dice Throw Tally | Counting Sort (O(n) without comparing elements) | [`Question5.java`](Question5.java) |
+| **Question 5** | The Dice Throw Tally | Counting Sort ($O(n)$ without element comparisons) | [`Question5.java`](Question5.java) |
 
 ---
 
-## Problem Descriptions & Details
+## 2. Category C: Parts A, B, and C
 
-### Question 1: The Height Line-Up
-- **Task:** Students line up for the class photo and the photographer arranges them from shortest to tallest by only swapping two students standing next to each other. Sort the array using Bubble Sort and print the whole line after every sweep from left to right. If a sweep makes no swap at all, the line is already in order: print that sweep and stop.
-- **Method:** `public static void lineUp(int[] heights)`
-- **Sample 1:** `heights = [4, 2, 5, 1]`
-  - Output:
-    ```
-    Pass 1: [2, 4, 1, 5]
-    Pass 2: [2, 1, 4, 5]
-    Pass 3: [1, 2, 4, 5]
-    ```
-- **Sample 2:** `heights = [1, 3, 2, 4]`
-  - Output:
-    ```
-    Pass 1: [1, 2, 3, 4]
-    Pass 2: [1, 2, 3, 4]
-    ```
+All files are located in the [`practice_problems/`](practice_problems/) directory.
 
-### Question 2: The Prize Table
-- **Task:** For prize distribution, sort student marks from highest to lowest using Selection Sort. In each round, find the highest mark among remaining elements and swap it into position. Count only rounds where a swap was actually made (do not count when the highest element is already in place).
-- **Method:** `public static int prizeTable(int[] marks)`
-- **Sample 1:** `marks = [45, 90, 60, 75]` -> `[90, 75, 60, 45] swaps = 2`
-- **Sample 2:** `marks = [80, 70, 60]` -> `[80, 70, 60] swaps = 0`
+### Part A — Coding Problems
 
-### Question 3: The Library Book Shelf
-- **Task:** A library helper puts books on a shelf one at a time, keeping them in increasing order. Implement Insertion Sort and print the state of the shelf after each book (from the 2nd book onwards) is placed.
-- **Method:** `public static void shelf(int[] books)`
-- **Sample:** `books = [30, 10, 40, 20]`
-  - Output:
-    ```
-    After placing 10: [10, 30, 40, 20]
-    After placing 40: [10, 30, 40, 20]
-    After placing 20: [10, 20, 30, 40]
-    ```
+| Problem | Title | Algorithm / Technique | Complexity | File |
+| :--- | :--- | :--- | :--- | :--- |
+| **Problem 1** | Library Catalog Lookup | Binary Search on sorted ISBNs | $O(\log n)$ time, $O(1)$ space | [`Problem1_LibraryCatalogLookup.java`](practice_problems/Problem1_LibraryCatalogLookup.java) |
+| **Problem 2** | Warehouse Bin Grid Scan | 2D Array Row-Major Scan | $O(m \cdot n)$ time, $O(1)$ space | [`Problem2_WarehouseBinGridScan.java`](practice_problems/Problem2_WarehouseBinGridScan.java) |
+| **Problem 3** | Transaction Duplicate Check | Hash Set De-duplication | $O(n)$ time, $O(n)$ space | [`Problem3_TransactionDuplicateCheck.java`](practice_problems/Problem3_TransactionDuplicateCheck.java) |
+| **Problem 4** | Employee ID Lookup | Hash Map Directory Indexing | $O(1)$ query, $O(n)$ space | [`Problem4_EmployeeIdLookup.java`](practice_problems/Problem4_EmployeeIdLookup.java) |
+| **Problem 5** | Pair With Target Sum | Hash Set Complement Search | $O(n)$ time, $O(n)$ space | [`Problem5_PairWithTargetSum.java`](practice_problems/Problem5_PairWithTargetSum.java) |
+| **Problem 6** | Best Single Trade Profit | Single-Pass Greedy Traversal | $O(n)$ time, $O(1)$ space | [`Problem6_BestSingleTradeProfit.java`](practice_problems/Problem6_BestSingleTradeProfit.java) |
+| **Problem 7** | Insert Position in Sorted List | Binary Search Insertion Point | $O(\log n)$ time, $O(1)$ space | [`Problem7_InsertPositionSortedList.java`](practice_problems/Problem7_InsertPositionSortedList.java) |
+| **Problem 8** | Spiral Order Traversal | 4-Boundary Clockwise Traversal | $O(m \cdot n)$ time, $O(m \cdot n)$ space | [`Problem8_SpiralOrderTraversal.java`](practice_problems/Problem8_SpiralOrderTraversal.java) |
+| **Problem 9** | Pair Sum in Sorted Array | Two-Pointer Inward Search | $O(n)$ time, $O(1)$ space | [`Problem9_PairSumSortedArray.java`](practice_problems/Problem9_PairSumSortedArray.java) |
+| **Problem 10** | Remove Duplicates In-Place | Two-Pointer In-Place Overwrite | $O(n)$ time, $O(1)$ space | [`Problem10_RemoveDuplicatesSortedArray.java`](practice_problems/Problem10_RemoveDuplicatesSortedArray.java) |
 
-### Question 4: Is the Queue in Order?
-- **Task:** Given an array of student token numbers, determine if they are in non-decreasing order. Return the index of the first student whose token number is smaller than the student before them, or `-1` if the queue is fully in order.
-- **Method:** `public static int firstBreak(int[] tokens)`
-- **Sample 1:** `tokens = [3, 5, 5, 8, 6, 9]` -> `4 (6 comes after 8)`
-- **Sample 2:** `tokens = [1, 2, 2, 7]` -> `-1`
+### Part B — Quiz (10 MCQs)
+Full questions, selected options, and detailed technical rationales:
+📄 [**`practice_problems/PartB_Quiz.md`**](practice_problems/PartB_Quiz.md)
 
-### Question 5: The Dice Throw Tally
-- **Task:** A student throws a 6-sided die several times. Count occurrences of each number from 1 to 6 without comparing throws with each other (Counting Sort). Print the counts and return the sorted array.
-- **Method:** `public static int[] diceSort(int[] rolls)`
-- **Sample:** `rolls = [4, 1, 6, 4, 2, 1, 4]`
-  - Output:
-    ```
-    Counts: 1:2 2:1 3:0 4:3 5:0 6:1
-    Sorted: [1, 1, 2, 4, 4, 4, 6]
-    ```
+### Part C — Concept Questions (5 Technical Explanations)
+In-depth discussions on linear vs non-linear structures, sum rule vs product rule, real-world memory vs latency trade-offs, and hash map vs sorted array complexity:
+📄 [**`practice_problems/PartC_ConceptQuestions.md`**](practice_problems/PartC_ConceptQuestions.md)
 
 ---
 
 ## How to Compile and Run
 
-To compile and run any question:
-
 ```bash
 cd step-week-11-assignment-problem
 
-# Example for Question 1:
-javac Question1.java
-java Question1
+# Assignment Problems (Questions 1 - 5)
+javac Question1.java && java Question1
+javac Question2.java && java Question2
+javac Question3.java && java Question3
+javac Question4.java && java Question4
+javac Question5.java && java Question5
 
-# Example for Question 2:
-javac Question2.java
-java Question2
-
-# Example for Question 3:
-javac Question3.java
-java Question3
-
-# Example for Question 4:
-javac Question4.java
-java Question4
-
-# Example for Question 5:
-javac Question5.java
-java Question5
+# Practice Problems (Problems 1 - 10)
+cd practice_problems
+javac *.java
+java Problem1_LibraryCatalogLookup
+java Problem2_WarehouseBinGridScan
+java Problem3_TransactionDuplicateCheck
+java Problem4_EmployeeIdLookup
+java Problem5_PairWithTargetSum
+java Problem6_BestSingleTradeProfit
+java Problem7_InsertPositionSortedList
+java Problem8_SpiralOrderTraversal
+java Problem9_PairSumSortedArray
+java Problem10_RemoveDuplicatesSortedArray
 ```
